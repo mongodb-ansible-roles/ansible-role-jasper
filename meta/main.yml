@@ -1,4 +1,6 @@
 ---
+dependencies:
+  - role: ansible-role-curator
 galaxy_info:
   author: MongoDB
   role_name: jasper
@@ -8,6 +10,12 @@ galaxy_info:
   platforms:
     - name: debian
       versions:
+        - stretch
         - buster
+    - name: el
+      versions:
+        - 6
+        - 7
+        - 8
   galaxy_tags:
     - jasper
