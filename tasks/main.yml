@@ -1,5 +1,5 @@
 ---
-- name: Instapp Jasper RPC Service
+- name: Install Jasper RPC Service
   command: "curator jasper service install rpc"
   args:
-    creates: /etc/systemd/system/rpc_jasperd.service
+    creates: /etc/init.d/rpc_jasperd
