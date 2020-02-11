@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mongodb-ansible-roles/ansible-role-jasper/compare/v1.0.0...v1.0.1) (2020-02-11)
+
+
+### Bug Fixes
+
+* Check for both systemd and initd files ([1c866ce](https://github.com/mongodb-ansible-roles/ansible-role-jasper/commit/1c866ce1a4d8b3583abef50ac6a51137131da64e))
+
 # 1.0.0 (2020-02-10)
 
 
