@@ -1,5 +1,16 @@
 ---
+- name: Check if init script exists initd
+  stat:
+    path: /etc/init.d/rpc_jasperd
+  register: init_d
+
+- name: Check if init script exists systemd
+  stat:
+    path: /etc/systemd/system/rpc_jasperd.service
+  register: systemd
+
 - name: Install Jasper RPC Service
   command: "curator jasper service install rpc"
-  args:
-    creates: /etc/init.d/rpc_jasperd
+  when:
+    - not init_d.stat.exists
+    - not systemd.stat.exists
