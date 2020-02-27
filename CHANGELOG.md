@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/mongodb-ansible-roles/ansible-role-jasper/compare/v1.0.1...v1.1.0) (2020-02-27)
+
+
+### Features
+
+* Allow user to specify curator url ([3c8b22e](https://github.com/mongodb-ansible-roles/ansible-role-jasper/commit/3c8b22e1773c10142052b3fee3ba9a3a5693c4b3))
+* Upgrade to molecule 3 ([7305596](https://github.com/mongodb-ansible-roles/ansible-role-jasper/commit/7305596bf7c00c8bb176a30a2fae7631776f9a78))
+
 ## [1.0.1](https://github.com/mongodb-ansible-roles/ansible-role-jasper/compare/v1.0.0...v1.0.1) (2020-02-11)
 
 
