@@ -1,6 +1,8 @@
 ---
 dependencies:
   - role: ansible-role-curator
+    vars:
+      curator_url: "{{ jasper_curator_url | default(omit) }}"
 galaxy_info:
   author: MongoDB
   role_name: jasper
