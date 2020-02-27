@@ -3,7 +3,8 @@ Ansible role for jasper
 
 Installs the Jasper service
 
-[![CircleCI](https://img.shields.io/circleci/build/github/mongodb-ansible-roles/ansible-role-jasper/master?style=flat-square)](https://circleci.com/gh/mongodb-ansible-roles/ansible-role-jasper)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-jasper/workflows/Molecule%20Test/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-jasper/actions?query=workflow%3A%22Molecule+Test%22)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-jasper/workflows/Release/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-jasper/actions?query=workflow%3A%22Release%22)
 
 Requirements
 ------------
@@ -15,6 +16,7 @@ Role Variables
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-------:|:--------:|
+| `jasper_curator_url` | Specify which curator binary url you want to download from | string | "" | no
 
 Dependencies
 ------------
@@ -29,19 +31,6 @@ Example Playbook
   roles:
     - role: ansible-role-jasper
 ```
-
-Development
------------
-
-Testing this role locally requires the CircleCI [Local CLI](https://circleci.com/docs/2.0/local-cli/).
-
-To install the CLI for macOS and Linux, invoke the following command:
-
-    $ curl -fLSs https://circle.ci/cli | DESTDIR=/usr/local/bin bash
-
-After installing the CLI, invoke the following command to run the Molecule tests:
-
-    $ make test
 
 License
 -------
