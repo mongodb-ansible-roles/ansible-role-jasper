@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/mongodb-ansible-roles/ansible-role-jasper/compare/v1.1.0...v1.1.1) (2020-02-27)
+
+
+### Bug Fixes
+
+* Added missing required packages ([cd2e09c](https://github.com/mongodb-ansible-roles/ansible-role-jasper/commit/cd2e09cf76ac38274a3074116f7fa009d345fc3e))
+
 # [1.1.0](https://github.com/mongodb-ansible-roles/ansible-role-jasper/compare/v1.0.1...v1.1.0) (2020-02-27)
 
 
